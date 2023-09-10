@@ -104,7 +104,3 @@ body {
   letter-spacing: -2px;
   font-weight: normal;
 }
-
-input:focus {
-    background-color: yellow;
-}
