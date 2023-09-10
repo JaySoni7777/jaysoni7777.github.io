@@ -9,14 +9,18 @@ body {
 
 #wrapper {
   width: 500px;
-  height: 50%;
+  height: 90%;
   overflow: hidden;
   border: 0px solid #000;
   margin: 50px auto;
   padding: 10px;
 }
 
-.main-content {
+#error {
+  color: #E1306C;
+  display: none;
+}
+.main-content {	
   width: 250px;
   height: 40%;
   margin: 10px auto;
@@ -76,7 +80,7 @@ body {
 
 .sub-content {
   width: 250px;
-  height: 40%;
+  height: 5%;
   margin: 10px auto;
   border: 1px solid #e6e6e6;
   padding: 20px 50px;
@@ -85,7 +89,7 @@ body {
 
 .s-part {
   text-align: center;
-  font-family: 'Overpass Mono', monospace;
+  font-family: 'Roboto fonts', monospace;
   word-spacing: -3px;
   letter-spacing: -2px;
   font-weight: normal;
